@@ -62,7 +62,7 @@ stages:
         deploy:
           steps:      
           - task: AzureWebApp@1
-            displayName: 'Deploy Azure Web App : rob-udacity-webapp'
+            displayName: 'Deploy Azure Web App : udacity-devops'
             inputs:
               azureSubscription: $(azureServiceConnectionId)
               appName: $(webAppName)
