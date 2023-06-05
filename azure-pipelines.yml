@@ -60,13 +60,7 @@ stages:
     strategy:
       runOnce:
         deploy:
-          steps:
-          
-          - task: UsePythonVersion@0
-            inputs:
-              versionSpec: '$(pythonVersion)'
-            displayName: 'Use Python version'
-
+          steps:      
           - task: AzureWebApp@1
             displayName: 'Deploy Azure Web App : rob-udacity-webapp'
             inputs:
